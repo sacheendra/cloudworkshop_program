@@ -6,7 +6,8 @@ var os = require('os');
 router.get('/', function(req, res, next) {
 	res.render('index', {
 		num_cpu_cores: os.cpus().length,
-		total_memory: os.totalmem()
+		total_memory: os.totalmem(),
+		hostname: os.hostname()
 	});
 });
 
