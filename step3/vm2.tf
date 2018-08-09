@@ -1,5 +1,5 @@
 resource "digitalocean_droplet" "vm2" {
-	image = "37048288"
+	image = "37049327"
 	name = "${var.team_name}-vm2"
 	region = "ams3"
 	size = "s-1vcpu-1gb"

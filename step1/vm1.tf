@@ -7,7 +7,7 @@ provider "digitalocean" {
 }
 
 resource "digitalocean_droplet" "vm1" {
-	image = "37048288"
+	image = "37049327"
 	name = "${var.team_name}-vm1"
 	region = "ams3"
 	size = "s-1vcpu-1gb"
