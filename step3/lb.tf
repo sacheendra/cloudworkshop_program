@@ -24,7 +24,7 @@ resource "digitalocean_droplet" "lb" {
 			"sudo apt-get -y install haproxy",
 
 			# download haproxy conf
-			"sudo wget https://gist.githubusercontent.com/thisismitch/91815a582c27bd8aa44d/raw/8fc59b7cb88a2be9b802cd76288ca1c2ea957dd9/haproxy.cfg -O /etc/haproxy/haproxy.cfg",
+			"sudo wget https://gist.githubusercontent.com/sacheendra/a2bf27a7797d7aa575b5d37c771c61f3/raw/f756b663abc3de168d68158c46e48e5ccd5bde67/cloudworkshop_haproxy_config_1 -O /etc/haproxy/haproxy.cfg",
 
 			# replace ip address variables in haproxy conf to use droplet ip addresses
 			"sudo sed -i 's/HAPROXY_PUBLIC_IP/${digitalocean_droplet.lb.ipv4_address}/g' /etc/haproxy/haproxy.cfg",
