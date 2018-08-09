@@ -63,5 +63,6 @@ typings/
 *.tfvars
 *.tfstate
 *.backup
+.terraform/
 
 .DS_Store
